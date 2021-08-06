@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  padding: 5px;
+  background-color: green;
+  color: white;
+}
+
+.blue {
+  width: 100px;
+  color:white;
+  background-color: blue;
+  margin-bottom: 100px;
+}
+
+ul li {
+  font-size: 1.5em;
+  border: 1px solid black;
+}
+
+.skills > h2 {
+padding: 40px;
+}
