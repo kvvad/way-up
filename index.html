@@ -2,46 +2,68 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <script type="text/javascript" src="./js/scripts.js" defer></script>
-  <title>Vadym's website</title>
+  <meta charset="UTF-8">
+  <title>Верстка современного сайта</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
-    <img src="./assets/img/logo.jpg" alt="Way-Up logo" class="logo" width="150">
-    <h1 class="red">Вступление H1</h1>
-    <p class="blue">Это текст моего первого домашнего задания.</p>
-    <p>Не верится, что мне удается писать свой <span class="red">первый код на HTML.</span></p>
+    <div class="container">
+      <img class="logo" src="./assets/img/logo.png" alt="Logo">
+      <div class="first-screen">
+        <div class="left">
+          <h1>С помощью верстки<br> я создам ту жизнь, о которой <span>мечтаю!</span></h1>
+          <p>Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня
+            не остановить!</p>
+          <button class="btn">Двигаться к мечте!</button>
+        </div>
+        <div class="right">
+          <img src="./assets/img/plane.png" alt="Plane image">
+        </div>
+      </div>
+    </div>
   </header>
   <main>
-    <section>
-      <h2 class="green">Что дальше? H2</h2>
-      <p>Дальше, я буду получать всё больше и больше опыта в разработке сайтов, чтобы достичь новых вершин! <a
-          href="https://google.com" target="_blank">Прочитать больше в Google</a></p>
+    <section class="future-plans">
+      <div class="container">
+        <h2>Что меня ждет впереди</h2>
+        <ul>
+          <li class="item">
+            <img src="./assets/img/icon1.png" alt="Time">
+            <h3>Свободное время</h3>
+            <p>Мне нужно свободное время на семью и самое настоящее</p>
+          </li>
+          <li class="item">
+            <img src="./assets/img/icon2.png" alt="Resort">
+            <h3>Яркие путешествия</h3>
+            <p>Работать откуда угодно - что может быть лучше?</p>
+          </li>
+          <li class="item">
+            <img src="./assets/img/icon3.png" alt="Rocket">
+            <h3>Создание ценности</h3>
+            <p>Нет ничего сильнее, чем жить не просто так, создавая ценность</p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="skills">
-      <h2 class="green">Что я буду уметь? H2</h2>
-      <p>Я могу создавать такие вот замечательные формы:</p>
-      <form action="#">
-        <input type="text" name="name" tabindex="1" required placeholder="Имя">
-        <input type="email" name="email" tabindex="2" required placeholder="E-mail">
-        <input type="tel" name="tel" tabindex="3" required placeholder="Телефон">
-        <input type="submit" value="Отправить форму">
-      </form>
-      <p>А также научусь создавать списки:</p>
-      <ul>
-        <li>С одним пунктом</li>
-        <li>С несколькими пунктами</li>
-        <li>И даже с тремя отдельными пунктами</li>
-      </ul>
+    <section class="form">
+      <div class="container">
+        <h2>Форма заказа билета в будущее</h2>
+        <form action="#">
+          <input type="text" placeholder="Имя">
+          <input type="email" placeholder="E-mail">
+          <input type="tel" placeholder="Телефон">
+          <input type="text" placeholder="Куда я полечу в ближайшее время?">
+          <button type="submit" class="btn">Двигаться к мечте!</button>
+        </form>
+      </div>
     </section>
   </main>
-  <footer>
-    <h2 class="green">Отличное начало! H2</h2>
-    <a href="#" target="_blank">Перейти на страницу первого занятия курса</a>
-  </footer>
+  <footer>© Все мои мечты защищены моим трудолюбием</footer>
 </body>
 
 </html>
