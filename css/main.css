@@ -1,23 +1,36 @@
 body {
-	font-family: 'Open Sans', sans-serif;
-	color: #201b2d;
-	font-size: 15px;
-	padding: 0;
-	margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #201b2d;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
 
-div, p, input, button, form, span, a, ul, li {
-	box-sizing: border-box;
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	font-family: 'Ubuntu', serif;
-	font-weight: 900;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Ubuntu', serif;
+  font-weight: 900;
 }
 
 p {
-	line-height: 1.65em;
+  line-height: 1.65em;
 }
 
 ul {
@@ -33,13 +46,12 @@ li {
 }
 
 header {
-  background: rgb(78,191,254);
-  background: -moz-linear-gradient(90deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
-  background: linear-gradient(90deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ebffe",endColorstr="#378fd9",GradientType=1);
-	color: #fff;
-  height: 100vh;
+  background: rgb(78, 191, 254);
+  background: -moz-linear-gradient(90deg, rgba(78, 191, 254, 1) 0%, rgba(55, 143, 217, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(78, 191, 254, 1) 0%, rgba(55, 143, 217, 1) 100%);
+  background: linear-gradient(90deg, rgba(78, 191, 254, 1) 0%, rgba(55, 143, 217, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ebffe", endColorstr="#378fd9", GradientType=1);
+  color: #fff;
 }
 
 .btn {
@@ -54,8 +66,8 @@ header {
 }
 
 .container {
-	max-width: 1170px;
-	margin: 0 auto;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .first-screen {
@@ -74,14 +86,15 @@ header {
 }
 
 .form h2 {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 form {
   width: 340px;
 }
 
-form input, form button {
+form input,
+form button {
   width: 100%;
   outline: none;
   border: none;
@@ -100,7 +113,7 @@ form input {
   margin-bottom: 15px;
 }
 
-.future-plans{
+.future-plans {
   text-align: center;
   margin: 110px 0;
 }
@@ -108,7 +121,7 @@ form input {
 .future-plans h2 {
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .logo {
@@ -135,4 +148,121 @@ footer {
   color: white;
   padding: 60px 0;
   font-size: 14px;
+}
+
+/* Responsive layout */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+
+  .form {
+    padding: 40px 0;
+  }
+
+  .form h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .left span {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    width: 720px;
+  }
+
+  .first-screen {
+    flex-direction: column;
+  }
+
+  .right > img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .left>p {
+    width: auto;
+  }
+
+  .opportunities {
+    flex-direction: column;
+  }
+
+  .item {
+    width: auto;
+  }
+
+  .future-plans {
+    margin: 30px 0;
+  }
+
+  .future-plans h2 {
+    padding-bottom: 20px;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  form input {
+    font-size: 0.6rem;
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 20px 10px;
+  }
 }
